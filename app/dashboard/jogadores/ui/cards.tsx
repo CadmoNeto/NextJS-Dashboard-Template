@@ -27,6 +27,7 @@ export default function Card({
                 <p>{ovr}</p>
             </div>
             <div className={styles.card_body}>
+                <p>{pos}</p>
                 <div className={styles.card_attributes}>
                 <div className={styles.card_attributes_row}>
                         <p className="flex justify-center">LEV: {lev}</p>
@@ -41,7 +42,7 @@ export default function Card({
                     <div className={styles.card_attributes_row}>
                         <p className="flex justify-center">SAQ: {lev}</p>
                         <p>|</p>
-                        <p>{pos}</p>
+                        <p></p>
                     </div>
                 </div>
             </div>

@@ -29,14 +29,17 @@
 .card_attributes{
     display: grid;
     align-self: self-end;
-    height: 6.5rem;
+    height: 4.25rem;
     width: 11.5rem;
+    border-top: 2px solid rgb(150 150 150);
+    border-width: 3px;
 }
 
 .card_attributes_row{
     display: grid;
     grid-template-columns: 79px 2px 79px;
     width: 11.5rem;
+    /* height: ; */
     align-items: center;
     justify-content: space-between;
 }
