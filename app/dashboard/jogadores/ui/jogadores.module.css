@@ -1,0 +1,42 @@
+.card{
+    height: 16rem;
+    width: 12rem;
+    background-color: rgb(243 244 246);
+    border: solid 4px rgb(10 60 160);
+    border-radius: 10px;
+}
+
+.card_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 11.5rem;
+    background-color: rgb(37 99 235);
+    padding: 0.25rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.card_body{
+    display: grid;
+    height: 13rem;
+    width: 11.5rem;
+    border-radius: 5px;
+}
+
+.card_attributes{
+    display: grid;
+    align-self: self-end;
+    height: 6.5rem;
+    width: 11.5rem;
+}
+
+.card_attributes_row{
+    display: grid;
+    grid-template-columns: 79px 2px 79px;
+    width: 11.5rem;
+    align-items: center;
+    justify-content: space-between;
+}

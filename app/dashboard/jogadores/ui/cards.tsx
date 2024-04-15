@@ -1,3 +1,5 @@
+import styles from './jogadores.module.css'
+
 export default function Card({
     nome,
     pos, //posição
@@ -18,24 +20,25 @@ export default function Card({
     blq: number
 }){
     return(
-        <div className="grid col-1 h-64 w-48 rounded-md bg-gray-100">
-            <div className="flex h-10 w-48 items-center justify-between rounded-md bg-blue-600 font-bold text-white p-1">
+        // <div className="grid col-1 h-64 w-48 rounded-md bg-gray-100">
+        <div className={styles.card}>
+            <div className={styles.card_header}>
                 <p>{nome}</p>
                 <p>{ovr}</p>
             </div>
-            <div className="grid item-end h-56 border-solid border-4 border-blue-600 rounded-md">
-                <div className="grid self-end items-end h-26 w-48">
-                    <div className="grid grid-cols-[79px_2px_79px] w-48 items-center justify-between">
+            <div className={styles.card_body}>
+                <div className={styles.card_attributes}>
+                <div className={styles.card_attributes_row}>
                         <p className="flex justify-center">LEV: {lev}</p>
                         <p className="w-0.5">|</p>
                         <p>ATQ: {atk}</p>
                     </div>
-                    <div className="grid grid-cols-[79px_2px_79px] w-48 items-center justify-between">
+                    <div className={styles.card_attributes_row}>
                         <p className="flex justify-center">REC: {rec}</p>
                         <p className="w-0.5">|</p>
                         <p>BLQ: {atk}</p>
                     </div>
-                    <div className="grid grid-cols-[79px_2px_79px] w-48 items-center justify-between">
+                    <div className={styles.card_attributes_row}>
                         <p className="flex justify-center">SAQ: {lev}</p>
                         <p>|</p>
                         <p>{pos}</p>
