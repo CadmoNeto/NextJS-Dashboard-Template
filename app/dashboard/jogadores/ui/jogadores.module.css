@@ -21,25 +21,37 @@
 
 .card_body{
     display: grid;
+    grid-template-rows: 7rem 1.5rem 4.5rem ;
     height: 13rem;
     width: 11.5rem;
     border-radius: 5px;
 }
 
+.card_position{
+    display: grid;
+    height: 1.5rem;
+    width: 10rem;
+    align-self: self-end;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border-bottom: 2px solid rgb(143 144 146);
+}
+
 .card_attributes{
     display: grid;
     align-self: self-end;
-    height: 4.25rem;
+    height: 4.5rem;
     width: 11.5rem;
-    border-top: 2px solid rgb(150 150 150);
-    border-width: 3px;
+    border-radius: 5px;
 }
 
 .card_attributes_row{
     display: grid;
     grid-template-columns: 79px 2px 79px;
     width: 11.5rem;
-    /* height: ; */
+    height: 1.5rem;
     align-items: center;
     justify-content: space-between;
+    border-radius: 5px;
 }

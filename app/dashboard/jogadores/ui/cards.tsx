@@ -20,16 +20,18 @@ export default function Card({
     blq: number
 }){
     return(
-        // <div className="grid col-1 h-64 w-48 rounded-md bg-gray-100">
         <div className={styles.card}>
             <div className={styles.card_header}>
                 <p>{nome}</p>
                 <p>{ovr}</p>
             </div>
             <div className={styles.card_body}>
-                <p>{pos}</p>
+                <div></div>
+                <div className={styles.card_position}>
+                    <p>{pos}</p>
+                </div>
                 <div className={styles.card_attributes}>
-                <div className={styles.card_attributes_row}>
+                    <div className={styles.card_attributes_row}>
                         <p className="flex justify-center">LEV: {lev}</p>
                         <p className="w-0.5">|</p>
                         <p>ATQ: {atk}</p>
