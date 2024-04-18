@@ -21,10 +21,18 @@
 
 .card_body{
     display: grid;
-    grid-template-rows: 7rem 1.5rem 3rem 1.5rem ;
+    grid-template-rows: 7rem 1.5rem 4.5rem ;
     height: 13rem;
     width: 11.5rem;
     border-radius: 0.31rem;
+}
+
+.card_lower{
+    display: grid;
+    grid-template-rows: 1.5rem 3rem;
+    height: 4.5rem;
+    width: 11.5rem;
+    background: radial-gradient(closest-side, rgb(57 119 255), rgb(37 99 235));
 }
 
 .card_position{
@@ -36,8 +44,6 @@
     justify-content: center;
     justify-self: center;
     border-bottom: 0.125rem solid rgb(143 144 146);
-
-    background-color: rgb(200 200 200);
 }
 
 .card_attributes{
