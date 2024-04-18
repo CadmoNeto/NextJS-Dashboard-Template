@@ -14,17 +14,17 @@
     width: 11.5rem;
     background-color: rgb(37 99 235);
     padding: 0.25rem;
-    border-radius: 5px;
+    border-radius: 0.31rem;
     font-weight: bold;
     color: white;
 }
 
 .card_body{
     display: grid;
-    grid-template-rows: 7rem 1.5rem 4.5rem ;
+    grid-template-rows: 7rem 1.5rem 3rem 1.5rem ;
     height: 13rem;
     width: 11.5rem;
-    border-radius: 5px;
+    border-radius: 0.31rem;
 }
 
 .card_position{
@@ -35,23 +35,39 @@
     align-items: center;
     justify-content: center;
     justify-self: center;
-    border-bottom: 2px solid rgb(143 144 146);
+    border-bottom: 0.125rem solid rgb(143 144 146);
+
+    background-color: rgb(200 200 200);
 }
 
 .card_attributes{
     display: grid;
+    grid-template-columns: 5.68rem 0.125rem 5.68rem;
     align-self: self-end;
-    height: 4.5rem;
+    height: 3rem;
     width: 11.5rem;
-    border-radius: 5px;
+}
+
+.card_attributes_column{
+    display: grid;
+    height: 1.5rem;
+    width: 5.68rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_central_line{
+    width: 0.125rem;
+    height: 3rem;
+    border: 0.0625rem solid rgb(143 144 146);
 }
 
 .card_attributes_row{
     display: grid;
-    grid-template-columns: 79px 2px 79px;
-    width: 11.5rem;
+    width: 5rem;
     height: 1.5rem;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
+    justify-self: center;
+    justify-content: center;
+    border-top: 0.125rem solid rgb(143 144 146);
 }

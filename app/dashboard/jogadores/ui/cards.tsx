@@ -30,7 +30,7 @@ export default function Card({
                 <div className={styles.card_position}>
                     <p>{pos}</p>
                 </div>
-                <div className={styles.card_attributes}>
+                {/* <div className={styles.card_attributes}>
                     <div className={styles.card_attributes_row}>
                         <p className="flex justify-center">LEV: {lev}</p>
                         <p className="w-0.5">|</p>
@@ -46,6 +46,20 @@ export default function Card({
                         <p>|</p>
                         <p></p>
                     </div>
+                </div> */}
+                <div className={styles.card_attributes}>
+                        <div className={styles.card_attributes_column}>
+                            <p>LEV: {lev}</p>
+                            <p>REC: {rec}</p>
+                        </div>
+                        <div className={styles.card_central_line}></div>
+                        <div className={styles.card_attributes_column}>
+                            <p>ATQ: {atk}</p>
+                            <p>BLQ: {atk}</p>
+                        </div>
+                </div>
+                <div className={styles.card_attributes_row}>
+                    <p>SAQ: {lev}</p>
                 </div>
             </div>
         </div>
