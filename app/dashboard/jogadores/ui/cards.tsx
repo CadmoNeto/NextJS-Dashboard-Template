@@ -26,38 +26,21 @@ export default function Card({
                 <p>{ovr}</p>
             </div>
             <div className={styles.card_body}>
-                <div></div>
-                {/* <div className={styles.card_attributes}>
-                    <div className={styles.card_attributes_row}>
-                        <p className="flex justify-center">LEV: {lev}</p>
-                        <p className="w-0.5">|</p>
-                        <p>ATQ: {atk}</p>
-                    </div>
-                    <div className={styles.card_attributes_row}>
-                        <p className="flex justify-center">REC: {rec}</p>
-                        <p className="w-0.5">|</p>
-                        <p>BLQ: {atk}</p>
-                    </div>
-                    <div className={styles.card_attributes_row}>
-                        <p className="flex justify-center">SAQ: {lev}</p>
-                        <p>|</p>
-                        <p></p>
-                    </div>
-                </div> */}
+                <div className={styles.card_upper}></div>
                 <div className={styles.card_lower}>
                     <div className={styles.card_position}>
                         <p>{pos}</p>
                     </div>
                     <div className={styles.card_attributes}>
-                            <div className={styles.card_attributes_column}>
-                                <p>LEV: {lev}</p>
-                                <p>REC: {rec}</p>
-                            </div>
-                            <div className={styles.card_central_line}></div>
-                            <div className={styles.card_attributes_column}>
-                                <p>ATQ: {atk}</p>
-                                <p>BLQ: {atk}</p>
-                            </div>
+                        <div className={styles.card_attributes_column}>
+                            <p>LEV: {lev}</p>
+                            <p>REC: {rec}</p>
+                        </div>
+                        <div className={styles.card_central_line}></div>
+                        <div className={styles.card_attributes_column}>
+                            <p>ATQ: {atk}</p>
+                            <p>BLQ: {atk}</p>
+                        </div>
                     </div>
                     <div className={styles.card_attributes_row}>
                         <p>SAQ: {lev}</p>

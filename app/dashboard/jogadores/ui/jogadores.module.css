@@ -2,7 +2,7 @@
     height: 16rem;
     width: 12rem;
     background-color: rgb(243 244 246);
-    border: solid 4px rgb(10 60 160);
+    border: solid 3px #163a90;
     border-radius: 10px;
 }
 
@@ -12,7 +12,7 @@
     justify-content: space-between;
     height: 2.5rem;
     width: 11.5rem;
-    background-color: rgb(37 99 235);
+    background-color: #2562f0;
     padding: 0.25rem;
     border-radius: 0.31rem;
     font-weight: bold;
@@ -21,18 +21,25 @@
 
 .card_body{
     display: grid;
-    grid-template-rows: 7rem 1.5rem 4.5rem ;
+    grid-template-rows: 7rem 6rem ;
     height: 13rem;
     width: 11.5rem;
     border-radius: 0.31rem;
 }
 
+.card_upper{
+    height: 7rem;
+    width: 11.5rem;
+    background: linear-gradient(135deg, #a7c0f9, #2562f0, #a7c0f9);
+}
+
 .card_lower{
     display: grid;
-    grid-template-rows: 1.5rem 3rem;
-    height: 4.5rem;
+    grid-template-rows: 1.5rem 3rem 1.5rem;
+    height: 6rem;
     width: 11.5rem;
-    background: radial-gradient(closest-side, rgb(57 119 255), rgb(37 99 235));
+    background: radial-gradient(farthest-corner, #a7c0f9, #6691f4, #2562f0);
+    border-radius: 0.35rem;
 }
 
 .card_position{
@@ -43,7 +50,7 @@
     align-items: center;
     justify-content: center;
     justify-self: center;
-    border-bottom: 0.125rem solid rgb(143 144 146);
+    border-bottom: 0.125rem solid #163a90;
 }
 
 .card_attributes{
@@ -65,7 +72,7 @@
 .card_central_line{
     width: 0.125rem;
     height: 3rem;
-    border: 0.0625rem solid rgb(143 144 146);
+    border: 0.0625rem solid #163a90;
 }
 
 .card_attributes_row{
@@ -75,5 +82,5 @@
     align-items: center;
     justify-self: center;
     justify-content: center;
-    border-top: 0.125rem solid rgb(143 144 146);
+    border-top: 0.125rem solid #163a90;
 }
